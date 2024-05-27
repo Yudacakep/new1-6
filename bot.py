@@ -206,13 +206,10 @@ class Bot(Client):
             )
             sys.exit()
 
- 
-
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
             f"[🔥 BERHASIL DIAKTIFKAN! 🔥]"
         )
-
  
         self.username = usr_bot_me.username
         #web-response
