@@ -221,6 +221,14 @@ class Bot(Client):
                 "Bot Berhenti. Gabung Group https://t.me/SharingUserbot untuk Bantuan"
             )
             sys.exit()
+
+ 
+
+     self.set_parse_mode("html")
+        self.LOGGER(__name__).info(
+            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]"
+        )
+
  
         self.username = usr_bot_me.username
         #web-response
@@ -228,19 +236,7 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
-    FORCE_SUB_1,
-    FORCE_SUB_2,
-    FORCE_SUB_3,
-    FORCE_SUB_4,
-    FORCE_SUB_5,
-    FORCE_SUB_6,
-    LOGGER,
-    OWNER,
-
-self.set_parse_mode("html")
-        self.LOGGER(__name__).info(
-            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]"
-        )
+    
 
     async def stop(self, *args):
         await super().stop()
