@@ -9,23 +9,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
-
-from config import (
-    API_HASH,
-    APP_ID,
-    CHANNEL_ID,
-    FORCE_SUB_1,
-    FORCE_SUB_2,
-    FORCE_SUB_3,
-    FORCE_SUB_4,
-    FORCE_SUB_5,
-    FORCE_SUB_6,
-    LOGGER,
-    OWNER,
-    TG_BOT_TOKEN,
-    TG_BOT_WORKERS,
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT, FORCE_SUB_1, FORCE_SUB_2, FORCE_SUB_3, FORCE_SUB_4, FORCE_SUB_5, FORCE_SUB_6, OWNER
 )
 
 
@@ -224,7 +208,7 @@ class Bot(Client):
 
  
 
-     self.set_parse_mode("html")
+        self.set_parse_mode("html")
         self.LOGGER(__name__).info(
             f"[🔥 BERHASIL DIAKTIFKAN! 🔥]"
         )
